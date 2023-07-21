@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function autoTab(obj) {
+    var pattern = new String("_-____-_____-__-_"); // กำหนดรูปแบบในนี้
+    var pattern_ex = new String("-"); // กำหนดสัญลักษณ์หรือเครื่องหมายที่ใช้แบ่งในนี้
+    var returnText = new String("");
+    var obj_l = obj.value.length;
+    var obj_l2 = obj_l - 1;
+    for (i = 0; i < pattern.length; i++) {
+        if (obj_l2 == i && pattern.charAt(i + 1) == pattern_ex) {
+            returnText += obj.value + pattern_ex;
+            obj.value = returnText;
+        }
+    }
+    if (obj_l >= pattern.length) {
+        obj.value = obj.value.substr(0, pattern.length);
+    }
+}
+
+</script>
+<center>
+    <div style="border:#333 1px solid; border-radius:10px; width:300px">
+        <form id="form1" name="form1" method="post" action="#">
+            <div class="row">
+              <div class="col-md-12">
+                  <label class="form-label" for="user_idcard">ป้อนรหัสบัตรประชาชนของนักเรียน</label>
+                  <input name="user_idcard"  type="text" class="form-control" id="user_idcard"  placeholder="x-xxxxx-xxxxx-xx-x" onclick="this.select()" onkeyup="autoTab(this)" value="" maxlength="20"  minlength="13"/>
+                </div>
+              </div>
+            </form>
+        </div>
+</center>
+</body>
+</html>

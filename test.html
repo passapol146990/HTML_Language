@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .col {
+            padding: 2%;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+        }
+
+        .input {
+            margin: +2rem 1rem 2rem 1rem;
+            border-radius: 5px;
+        }
+        .row{
+            padding: 2%;
+        }
+        #table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, 1fr);
+    gap: 10px;
+  }
+  tr td{
+    margin: 2rem;
+    display: block;
+    font-size: 2rem;
+  }
+  .top{
+    margin-left: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+  }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="top sticky-top">
+            <input type="text" name="title" id="search" placeholder="ค้นหาสินค้า..." class="input" />
+        </div>
+        <div>
+            <div class="container">
+                <table id="table" class="col">
+                    <tr id="tr" class="col"> 
+                      <td>a</td>
+                      <td>10</td>
+                      <td><img src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" alt=""></td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                    </tr>
+                    <tr id="tr" class="col"> 
+                        <td>a</td>
+                        <td>10</td>
+                        <td><img src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" alt=""></td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                      </tr>
+                      <tr id="tr" class="col"> 
+                        <td>a</td>
+                        <td>10</td>
+                        <td><img src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" alt=""></td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                      </tr>
+                      <tr id="tr" class="col"> 
+                        <td>a</td>
+                        <td>10</td>
+                        <td><img src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" alt=""></td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                      </tr>
+                      <tr id="tr" class="col"> 
+                        <td>a</td>
+                        <td>10</td>
+                        <td><img src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" alt=""></td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                      </tr>
+                  </table>
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <div class="item-in-box">
+                            <h2>รายการ</h2>
+                            <h2>10 บาท</h2>
+                            <img
+                                src="https://i.ytimg.com/an_webp/ik_SVbSk6TI/mqdefault_6s.webp?du=3000&sqp=CJ6Ck6MG&rs=AOn4CLD2BDE9Nu46EDNFzKg_2-HH8gCimg" />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                                sint.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

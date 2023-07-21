@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(180deg ,#e3f0ff 0%, #ffffff 100%);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top{
+    background: url(./bg-landing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-top: -10px;
+    margin-left: 10px;
+    
+    background-position-x: right;
+    background-position-y: top;
+
+    height: 40vh;
+    width: 100%;
+}
+.top img{
+
+}
+
